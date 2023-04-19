@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Primeros pasos</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<style>
-    body{
-        font-family: 'Anuphan', sans-serif;
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      font-family: "Anuphan", sans-serif;
     }
-</style>
-<body>
-
-<dl>
-    <dt>Meditation</dt>
-    <dd>Es una actividad para mejorar la concentración</dd>
-
-</dl>
-</body>
-<script>
-    function write(){
-        document.write("<h1>Meditación</h1>")
-    };
+  </style>
+  <body>
+    <dl>
+      <dt>Meditation</dt>
+      <dd>Es una actividad para mejorar la concentración</dd>
+    </dl>
+  </body>
+  <script>
+    function write() {
+      document.write("<h1>Meditación</h1>");
+    }
     write();
-
-
-</script>
+    let numeroIngresado = Number(
+      prompt("por favor ingrese un numero entre 1 y 100")
+    );
+    while (numeroIngresado > 100 || numeroIngresado < 0) {
+      if (numeroIngresado > 100 || numeroIngresado < 0) {
+        numeroIngresado = Number(
+          prompt("por favor ingrese un numero entre 1 y 100")
+        );
+      }
+      else{
+        break;
+      }
+    }
+    alert("Su numero fue " + numeroIngresado)
+  </script>
 </html>
